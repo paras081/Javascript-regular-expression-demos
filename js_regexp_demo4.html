@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Js Regular expression demo 1</title>   
+            
+	</head>
+	<body> 
+        
+              
+        <p id="demo"></p>
+        
+         <script>
+            
+            var str="ab 34";
+        var str="ab34";
+//            var str="22:4:3";
+            
+//            var patt=/ab\d/;
+            var patt=/\w\s\d/;
+             
+            var result = str.match(patt);
+            
+             if(result){
+                document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>

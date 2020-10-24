@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Js Regular expression demo 1</title>   
+            
+	</head>
+	<body> 
+        
+              
+        <p id="demo"></p>
+        
+         <script>
+            
+//            var str="12:34:56";
+//        var str="3:2:33";
+            var str="22:4:3";
+            
+            var patt=/2:3/;
+             
+            var result = str.match(patt);
+            
+             if(result){
+                document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>
