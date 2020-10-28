@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Js Regular expression demo--> * & +</title>   
+            
+	</head>
+	<body> 
+        
+              
+        <p id="demo"></p>
+        
+         <script>
+            
+        var str="abc";
+        var str="bc";
+        var str="aaaaabc";
+            
+            var patt=/a*bc/;
+//            var patt=/a+bc/;
+
+             
+            var result = str.match(patt);
+            
+             if(result){
+                document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>

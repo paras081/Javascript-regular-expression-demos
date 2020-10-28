@@ -1,0 +1,30 @@
+<html>
+    <head>
+		<title>Js Regular expression demo--> \-->escaping charachater</title>   
+            
+	</head>
+	<body> 
+        
+              
+        <p id="demo"></p>
+        
+         <script>
+            
+//        var str="abcd";
+        var str="abc.";
+     
+            var patt=/abc\./; //literal character
+//            var patt=/abc.*/;
+                 
+             
+            var result = str.match(patt);
+                         
+             if(result){
+                document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>

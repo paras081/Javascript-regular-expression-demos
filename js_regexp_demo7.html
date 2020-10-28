@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Js Regular expression demo--> .</title>   
+            
+	</head>
+	<body> 
+        
+              
+        <p id="demo"></p>
+        
+         <script>
+            
+        var str="abcde";
+        var str="abcdef";
+//        var str="abde";//not match
+//          var str="ab de";//match
+//            
+//            var patt=/ab.de/;
+            var patt=/abc.*/;
+                 
+             
+            var result = str.match(patt);
+            
+             if(result){
+                document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>
