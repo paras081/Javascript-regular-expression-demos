@@ -1,0 +1,31 @@
+<html>
+    <head>
+		<title>Js Regular expression demo--> [ - ]-->matches one of any character in between the brackets</title>   
+            
+	</head>
+	<body>              
+        <p id="demo"></p>
+         <script>
+            
+//        var str="a2b";
+//        var str="a5b";
+        var str="a6b";  
+             
+        var patt=/a[1-5]b/; //literal character
+       
+
+//         var str="a32132b";  
+//        var str="a32134b";  
+//        var str="a3213b4"; 
+//         var patt=/a[1234]+b/;             
+            var result = str.match(patt);
+                         
+             if(result){
+                 document.getElementById('demo').innerHTML="match found";
+             }else{
+                 document.getElementById('demo').innerHTML="not match";
+             }
+                 
+        </script>   
+	</body>
+</html>
